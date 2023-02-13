@@ -1,7 +1,9 @@
+import styled from "styled-components";
+
 const Button = () => {
     return (
         <div>
-            
+
         </div>
     );
 };

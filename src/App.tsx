@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import './App.css';
+import Button from './components/Button';
+import Input from './components/Input';
 import ModalExtra from './components/ModalExtra';
 import ModalNormal from './components/ModalNormal';
+import Select from './components/Select';
 
 function App() {
   return (
@@ -12,8 +15,17 @@ function App() {
         <ModalExtra/>
       </StListItem>
       <h1>Button</h1>
+      <StListItem>
+        <Button/>
+      </StListItem>
       <h1>Input</h1>
+      <StListItem>
+        <Input />
+      </StListItem>
       <h1>Select</h1>
+      <StListItem>
+        <Select />
+      </StListItem>
     </div>
   );
 }
