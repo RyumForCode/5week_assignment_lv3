@@ -1,14 +1,18 @@
+import { useRef, useState } from 'react';
 import styled from 'styled-components';
 import './App.css';
 import Button from './components/Button';
 import Input from './components/Input';
 import ModalExtra from './components/ModalExtra';
 import ModalNormal from './components/ModalNormal';
-import Select from './components/Select';
+import SelectComp from './components/SelectComp';
 
 function App() {
+
+  const [clickDetect, setClickDetect] = useState(0);
+
   return (
-    <div>
+    <div onClick = {() => {setClickDetect(clickDetect + 1)}}>
       <h1>Modal</h1>
       <StListItem>
         <ModalNormal/>
@@ -24,7 +28,7 @@ function App() {
       </StListItem>
       <h1>Select</h1>
       <StListItem>
-        <Select />
+        <SelectComp />
       </StListItem>
     </div>
   );
